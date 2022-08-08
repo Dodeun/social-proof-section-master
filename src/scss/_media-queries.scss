@@ -1,0 +1,90 @@
+@media screen and (min-width: 768px) {
+
+    body {
+        height: 100vh;
+    }
+
+    main {
+        max-width: 1110px;
+        margin: 0;
+
+        .sections-wrapper {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 4.8rem;
+
+            .statement {
+                width: 450px;
+                margin-bottom: 0;
+                text-align: left;
+
+                h1 {
+                    font-size: 3.8rem;
+                    line-height: 3.2rem;
+                    letter-spacing: -0.1rem;
+                    margin-bottom: 1.8rem;
+                }
+
+                p {
+                    font-size: 1.2rem;
+                }
+            }
+
+            .ratings-container {
+                margin-bottom: 0;
+
+                .rating-wrapper {
+                    padding: 1rem 1.8rem;
+
+                    &:nth-child(1) {
+                        transform: translateX(-80px);
+                    }
+
+                    &:nth-child(2) {
+                    transform: translateX(-40px);
+                    }
+                }
+            }
+        }
+
+        .reviews-container {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+
+            .review-card {
+                padding: 2rem 2rem 2.5rem;
+
+                .profile-wrapper {
+                    margin: 0.7rem 0 1.7rem;
+                }
+
+                &:nth-child(2) {
+                    transform: translateY(16px);
+                }
+
+                &:nth-child(3) {
+                    transform: translateY(32px);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 950px) {
+
+    .rating-wrapper {
+        display: flex;
+        align-items: center;
+        padding: 1.2rem 2.5rem;
+
+        .stars {
+            margin-right: 2rem;
+            margin-bottom: 0 !important;
+
+            svg {
+                margin-left: 0.3rem;
+            }
+        }
+    }
+}
